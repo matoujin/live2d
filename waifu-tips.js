@@ -56,7 +56,8 @@ function loadWidget(config) {
 				window.ASTEROIDSPLAYERS.push(new Asteroids());
 			} else {
 				var script = document.createElement("script");
-				script.src = "https://cdn.jsdelivr.net/gh/GalaxyMimi/CDN/asteroids.js";
+				//修改
+				script.src = "https://cdn.jsdelivr.net/gh/matoujin/CDN/asteroids.js";
 				document.head.appendChild(script);
 			}
 		});
@@ -68,7 +69,8 @@ function loadWidget(config) {
 			Live2D.captureFrame = true;
 		});
 		document.querySelector("#waifu-tool .fa-info-circle").addEventListener("click", () => {
-			open("https://github.com/stevenjoezhang/live2d-widget");
+			//修改
+			open("https://github.com/matoujin/live2d");
 		});
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());
